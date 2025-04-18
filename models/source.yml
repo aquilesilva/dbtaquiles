@@ -6,10 +6,53 @@ sources:
     schema: public
     tables:
       - name: categories
+        columns:
+          - name: category_id
+            tests:
+              - not_null
+              - unique
       - name: products
+        columns:
+          - name: product_id
+            tests:
+              - not_null
+              - unique
+          - name: product_name
+            tests:
+              - not_null
       - name: suppliers
+        columns:
+          - name: supplier_id
+            tests:
+              - not_null
+              - unique
       - name: employees
+        columns:
+          - name: employee_id
+            tests:
+              - not_null
+              - unique
       - name: order_details
+        columns:
+          - name: order_detail_id
+            tests:
+              - not_null
+              - unique
       - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
       - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+              - unique
       - name: shippers
+        columns:
+          - name: shipper_id
+            tests:
+              - not_null
+              - unique
